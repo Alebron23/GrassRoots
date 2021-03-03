@@ -1,7 +1,4 @@
 import logo from "./img/logo.png";
-import maintenance from "./img/maintenance.png";
-import design from "./img/design.png";
-import irrigation from "./img/irrigation.png";
 import Grid from "@material-ui/core/Grid";
 import { IKImage } from "imagekitio-react";
 
