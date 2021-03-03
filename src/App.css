@@ -1,38 +1,108 @@
 .App {
-  text-align: center;
+  margin-bottom: 16px;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 15vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  height: 80px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.App-title {
+  margin-left: -16px;
+  margin-bottom: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-quote {
+  margin-left: auto;
+  margin-right: 24px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+/*url(/src/img/coverPage.png)
+  */
+
+.App-coverPage {
+  background-image: url(https://ik.imagekit.io/o2fek1q3cpj/coverPage_TzcyAU4Y0.png?ik-sdk-version=react-1.0.9),
+    url(https://ik.imagekit.io/o2fek1q3cpj/tr:q-20,bl-6/coverPage_TzcyAU4Y0.png?ik-sdk-version=react-1.0.9);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 200px;
+  margin-top: -16px;
+}
+
+.App-subsection {
+  padding-left: 16px;
+  width: 100% !important;
+  margin-top: -8px !important;
+}
+
+.sectionImg {
+  width: 100%;
+}
+
+.sectionText {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+h3 {
+  margin: 8px 0;
+}
+
+.contact-btn {
+  display: block;
+  font-size: 42px;
+  margin: 100px auto;
+}
+
+h1 {
+  margin-left: 16px;
+  font-size: 43px;
+  margin-bottom: 0;
+}
+
+ul {
+  display: inline-block;
+}
+
+.servicesList {
+  font-size: 32px;
+}
+
+.firstList {
+  margin-left: 16px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 500px) {
+  .App-coverPage {
+    height: 600px;
+    background-size: cover;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-subsection {
+    margin-top: 8px !important;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .sectionText {
+    height: 200px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .App-coverPage {
+    height: calc(100vh - 64px);
   }
 }
